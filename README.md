@@ -30,13 +30,19 @@ The text in the brackets changes with the conditions: for example, if mindep and
 
 ## Running it
 
+### Windows build
+
+Download `offer_generator.exe` from the [latest release](../../releases/latest), put a `.env` file with your bot token and Telegram user ID in the same folder (see `.env.example`), and run it.
+
+### From source
+
 ```bash
 pip install -r requirements.txt
 cp .env.example .env      # add your bot token and your Telegram user ID
 python offer_generator.py
 ```
 
-To build a Windows `.exe`:
+To build the `.exe` yourself:
 
 ```bash
 pip install pyinstaller
