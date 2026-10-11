@@ -1,0 +1,18 @@
+.venv/
+venv/
+
+.env
+
+__pycache__/
+*.py[cod]
+
+# PyInstaller output
+build/
+dist/
+*.spec
+
+.vscode/
+.idea/
+
+.DS_Store
+Thumbs.db
