@@ -26,7 +26,6 @@ The text in the brackets changes with the conditions: for example, if mindep and
 - A flag emoji is built automatically from the GEO code
 - "Lock" checkbox next to each field keeps its value after sending (handy for fields that repeat between offers)
 - Keyboard-only workflow: Up/Down move between fields, Enter goes to the next unlocked field and sends the form after the last one
-- The offer name is copied to the clipboard on send
 
 ## Running it
 
@@ -56,6 +55,15 @@ Put the `.env` file next to the `.exe`.
 - I built this around my own daily work. I used AI as a coding assistant, mostly for the window layer (customtkinter), and I maintain and extend the script myself.
 - The message format (`[FB]`, "Slot" as the default approach, field names) matches my own workflow and is easy to change at the top of `offer_generator.py`.
 - Messages are in English; the original version of the UI was in Russian.
+
+## Tests
+
+```bash
+pip install -r requirements.txt pytest
+pytest
+```
+
+The tests cover the message-building logic (`geo_flag`, `_conditions`, `build_offer_text`).
 
 ## License
 
